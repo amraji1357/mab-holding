@@ -12,7 +12,7 @@ export default function RayanZomorodPage() {
 
           <div className="flex items-center gap-4">
             <a
-              href="/fa/companies/rayan-zomorod"
+              href="/fa/companies/darian-zomorod"
               className="rounded-full border border-black/20 px-5 py-2 text-xs tracking-widest transition hover:bg-black hover:text-white"
             >
               FA
@@ -35,11 +35,11 @@ export default function RayanZomorodPage() {
           </p>
 
           <h1 className="mt-8 text-6xl font-semibold tracking-tight md:text-8xl">
-            Rayan Zomorod
+            Darian Zomorod
           </h1>
 
           <p className="mt-5 text-sm tracking-[0.25em] text-black/40">
-            RAYAN ZOMOROD
+            DARIAN ZOMOROD
           </p>
         </div>
       </section>
@@ -56,13 +56,13 @@ export default function RayanZomorodPage() {
 
           <div>
             <h2 className="text-4xl font-semibold leading-tight md:text-5xl">
-              Rayan Zomorod
+              Darian Zomorod
               <br />
               One of M.A.B Companies
             </h2>
 
             <p className="mt-10 text-lg leading-9 text-black/55">
-              Rayan Zomorod is one of the companies within Birami Holding.
+              Darian Zomorod is one of the companies within Birami Holding.
               Detailed information about its activities, services, business
               areas, and vision will be presented here.
             </p>
@@ -102,7 +102,7 @@ export default function RayanZomorodPage() {
           </span>
 
           <span className="text-sm text-white/30">
-            Rayan Zomorod
+            Darian Zomorod
           </span>
         </div>
       </footer>

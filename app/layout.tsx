@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     "M.A.B Holding",
     "Birami Holding",
     "هلدینگ بی‌رامی",
-    "رایان زمرد",
+    "داریان زمرد",
     "پتروشیمی",
   ],
   robots: {

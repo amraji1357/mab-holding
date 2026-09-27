@@ -11,11 +11,11 @@ export const metadata: Metadata = {
 
 const companies = [
   {
-    name: "رایان زمرد",
-    english: "RAYAN ZOMOROD",
+    name: "داریان زمرد",
+    english: "DARIAN ZOMOROD",
     description:
       "یکی از شرکت‌های مجموعه M.A.B با رویکردی نوآورانه و آینده‌نگر.",
-    href: "/fa/companies/rayan-zomorod",
+    href: "/fa/companies/darian-zomorod",
   },
   {
     name: "پتروشیمی",

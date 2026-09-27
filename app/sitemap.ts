@@ -17,13 +17,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/fa/companies/rayan-zomorod`,
+      url: `${baseUrl}/fa/companies/darian-zomorod`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/en/companies/rayan-zomorod`,
+      url: `${baseUrl}/en/companies/darian-zomorod`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,

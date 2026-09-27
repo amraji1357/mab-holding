@@ -11,10 +11,10 @@ export const metadata: Metadata = {
 
 const companies = [
   {
-    name: "Rayan Zomorod",
+    name: "Darian Zomorod",
     description:
       "One of the M.A.B companies with an innovative and forward-looking approach.",
-    href: "/en/companies/rayan-zomorod",
+    href: "/en/companies/darian-zomorod",
   },
   {
     name: "Petrochemical",
