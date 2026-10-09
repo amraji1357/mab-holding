@@ -212,12 +212,65 @@ export default function EnglishHome() {
               </h2>
             </div>
 
-            <a
-              href="mailto:info@mab-holding.com"
-              className="w-fit border-b border-[#d4af5a] pb-2 text-[#d4af5a] transition hover:text-[#e2c474]"
-            >
-              info@mab-holding.com
-            </a>
+            <div className="flex flex-col items-start gap-5">
+              <a
+                href="mailto:info@mab-holding.com"
+                className="w-fit border-b border-[#d4af5a] pb-2 text-[#d4af5a] transition hover:text-[#e2c474]"
+              >
+                info@mab-holding.com
+              </a>
+
+              <div className="flex flex-wrap gap-3">
+                <a
+                  href="https://www.instagram.com/m.a.b_holding/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border border-[#d4af5a]/40 px-4 py-2 text-sm text-[#d4af5a] transition hover:border-[#d4af5a] hover:text-[#e2c474]"
+                >
+                  Instagram
+                </a>
+                <a
+                  href="https://wa.me/989306831826"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border border-[#d4af5a]/40 px-4 py-2 text-sm text-[#d4af5a] transition hover:border-[#d4af5a] hover:text-[#e2c474]"
+                >
+                  WhatsApp
+                </a>
+                <a
+                  href="https://t.me/mab_holding"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border border-[#d4af5a]/40 px-4 py-2 text-sm text-[#d4af5a] transition hover:border-[#d4af5a] hover:text-[#e2c474]"
+                >
+                  Telegram
+                </a>
+                <a
+                  href="https://ble.ir/mab_holding"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border border-[#d4af5a]/40 px-4 py-2 text-sm text-[#d4af5a] transition hover:border-[#d4af5a] hover:text-[#e2c474]"
+                >
+                  Bale
+                </a>
+                <a
+                  href="https://rubika.ir/mab_holding"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border border-[#d4af5a]/40 px-4 py-2 text-sm text-[#d4af5a] transition hover:border-[#d4af5a] hover:text-[#e2c474]"
+                >
+                  Rubika
+                </a>
+                <a
+                  href="https://igap.net/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border border-[#d4af5a]/40 px-4 py-2 text-sm text-[#d4af5a] transition hover:border-[#d4af5a] hover:text-[#e2c474]"
+                >
+                  iGap
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
