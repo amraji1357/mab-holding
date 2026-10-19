@@ -32,9 +32,17 @@ export default function EnglishHome() {
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6 lg:px-10">
           <a
             href="/en"
-            className="text-3xl font-semibold tracking-[0.18em] text-[#d4af5a]"
+            className="flex items-center gap-3"
+            aria-label="M.A.B Holding"
           >
-            M.A.B
+            <img
+              src="/images/b.jfif"
+              alt="M.A.B Holding"
+              className="h-12 w-12 rounded-full object-cover"
+            />
+            <span className="text-3xl font-semibold tracking-[0.18em] text-[#d4af5a]">
+              M.A.B
+            </span>
           </a>
 
           <nav className="hidden items-center gap-10 text-sm text-[#a94f4f] md:flex">
@@ -94,15 +102,23 @@ export default function EnglishHome() {
             </div>
           </div>
 
-          {/* M.A.B visual */}
+          {/* M.A.B visual and image */}
           <div className="flex justify-center lg:justify-end">
-            <div className="relative flex h-[360px] w-[360px] items-center justify-center rounded-full border border-[#d4af5a]/60 bg-[#4d8daa]/40 shadow-2xl shadow-[#356d86]/30">
-              <div className="absolute inset-8 rounded-full border border-[#a94f4f]/25" />
-              <div className="absolute inset-20 rounded-full border border-[#d4af5a]/40" />
+            <div className="flex flex-col items-center gap-5 sm:flex-row sm:gap-5">
+              <img
+                src="/images/b.jfif"
+                alt="M.A.B Holding"
+                className="h-[380px] w-52 shrink-0 rounded-2xl border border-[#d4af5a]/60 bg-[#5f9fbd]/30 object-contain shadow-xl sm:h-[440px] sm:w-56"
+              />
 
-              <span className="relative text-6xl font-semibold tracking-[0.18em] text-[#d4af5a]">
-                M.A.B
-              </span>
+              <div className="relative flex h-[360px] w-[360px] shrink-0 items-center justify-center rounded-full border border-[#d4af5a]/60 bg-[#4d8daa]/40 shadow-2xl shadow-[#356d86]/30">
+                <div className="absolute inset-8 rounded-full border border-[#a94f4f]/25" />
+                <div className="absolute inset-20 rounded-full border border-[#d4af5a]/40" />
+
+                <span className="relative text-6xl font-semibold tracking-[0.18em] text-[#d4af5a]">
+                  M.A.B
+                </span>
+              </div>
             </div>
           </div>
         </div>
@@ -194,6 +210,117 @@ export default function EnglishHome() {
                 </div>
               </a>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Business Activities */}
+      <section id="activities" className="border-t border-[#a94f4f]/15 bg-[#548fab]/45">
+        <div className="mx-auto max-w-7xl px-6 py-28 lg:px-10">
+          <div className="mb-14 max-w-3xl">
+            <p className="mb-4 text-sm tracking-[0.3em] text-[#d4af5a]">
+              OUR BUSINESS AREAS
+            </p>
+            <h2 className="text-4xl font-bold leading-relaxed sm:text-5xl">
+              The Scope of
+              <span className="text-[#d4af5a]"> M.A.B</span> Activities
+            </h2>
+            <p className="mt-6 text-lg leading-9 text-[#a94f4f]/90">
+              From investment and trade to construction and technology, M.A.B
+              pursues opportunities for business development and collaboration
+              across multiple sectors. The areas below represent the group's
+              business fields and development initiatives.
+            </p>
+          </div>
+
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <article className="rounded-3xl border border-[#a94f4f]/20 bg-[#a94f4f]/10 p-7 transition hover:border-[#d4af5a]/70">
+              <p className="text-sm tracking-widest text-[#d4af5a]">01 / FINANCE</p>
+              <h3 className="mt-4 text-2xl font-bold">Investment & Finance</h3>
+              <p className="mt-4 leading-8 text-[#a94f4f]/90">
+                Exploring investment opportunities and financing solutions to
+                support economic initiatives and business development.
+              </p>
+            </article>
+
+            <article className="rounded-3xl border border-[#a94f4f]/20 bg-[#a94f4f]/10 p-7 transition hover:border-[#d4af5a]/70">
+              <p className="text-sm tracking-widest text-[#d4af5a]">02 / STEEL</p>
+              <h3 className="mt-4 text-2xl font-bold">Steel & Metals</h3>
+              <p className="mt-4 leading-8 text-[#a94f4f]/90">
+                Supplying steel sheets, rebar, and other metal products to meet
+                the needs of construction, industrial, and infrastructure projects.
+              </p>
+            </article>
+
+            <article className="rounded-3xl border border-[#a94f4f]/20 bg-[#a94f4f]/10 p-7 transition hover:border-[#d4af5a]/70">
+              <p className="text-sm tracking-widest text-[#d4af5a]">03 / CONSTRUCTION</p>
+              <h3 className="mt-4 text-2xl font-bold">Construction & Development</h3>
+              <p className="mt-4 leading-8 text-[#a94f4f]/90">
+                Focusing on civil construction, building development, and
+                participation in property and infrastructure projects.
+              </p>
+            </article>
+
+            <article className="rounded-3xl border border-[#a94f4f]/20 bg-[#a94f4f]/10 p-7 transition hover:border-[#d4af5a]/70">
+              <p className="text-sm tracking-widest text-[#d4af5a]">04 / CURRENCY</p>
+              <h3 className="mt-4 text-2xl font-bold">Currency Exchange & Remittance</h3>
+              <p className="mt-4 leading-8 text-[#a94f4f]/90">
+                Foreign currency services involving US dollars, euros, and other
+                currencies, as well as international remittances, subject to
+                applicable regulations and licensing requirements.
+              </p>
+            </article>
+
+            <article className="rounded-3xl border border-[#a94f4f]/20 bg-[#a94f4f]/10 p-7 transition hover:border-[#d4af5a]/70">
+              <p className="text-sm tracking-widest text-[#d4af5a]">05 / PRECIOUS ASSETS</p>
+              <h3 className="mt-4 text-2xl font-bold">Gold & Precious Stones</h3>
+              <p className="mt-4 leading-8 text-[#a94f4f]/90">
+                Covering melted gold, gold coins and bars, alongside a range of
+                precious stones, with an emphasis on authenticity and reliable valuation.
+              </p>
+            </article>
+
+            <article className="rounded-3xl border border-[#a94f4f]/20 bg-[#a94f4f]/10 p-7 transition hover:border-[#d4af5a]/70">
+              <p className="text-sm tracking-widest text-[#d4af5a]">06 / AI & TECHNOLOGY</p>
+              <h3 className="mt-4 text-2xl font-bold">Artificial Intelligence & Technology</h3>
+              <p className="mt-4 leading-8 text-[#a94f4f]/90">
+                Website and app development, bot creation, software projects,
+                and consulting for practical solutions powered by artificial intelligence.
+              </p>
+            </article>
+
+            <article className="rounded-3xl border border-[#a94f4f]/20 bg-[#a94f4f]/10 p-7 transition hover:border-[#d4af5a]/70 sm:col-span-2 lg:col-span-1">
+              <p className="text-sm tracking-widest text-[#d4af5a]">07 / LEGAL SERVICES</p>
+              <h3 className="mt-4 text-2xl font-bold">Legal Services & Advocacy</h3>
+              <p className="mt-4 leading-8 text-[#a94f4f]/90">
+                Legal support, consultation, and assistance with legal matters
+                through qualified professionals and within the applicable legal framework.
+              </p>
+            </article>
+          </div>
+
+          <div className="mt-12 rounded-3xl border border-[#d4af5a]/50 bg-[#17384a] p-8 sm:p-12">
+            <p className="mb-4 text-sm tracking-[0.3em] text-[#d4af5a]">
+              BARTER & TRADE
+            </p>
+            <h3 className="text-3xl font-bold leading-relaxed text-[#d4af5a] sm:text-4xl">
+              Barter: Expanding Business Collaboration
+            </h3>
+            <p className="mt-6 max-w-4xl text-lg leading-9 text-[#f3e7cf]">
+              Across M.A.B's various business fields, barter transactions and
+              the exchange of goods and services may be considered according
+              to the needs, capabilities, and mutual agreement of the parties.
+              This approach aims to create new opportunities for cooperation,
+              make better use of available resources, and facilitate commercial
+              relationships. Each transaction is subject to the laws, licenses,
+              and regulations applicable to its specific sector.
+            </p>
+            <a
+              href="#contact"
+              className="mt-8 inline-flex rounded-full bg-[#d4af5a] px-7 py-3.5 font-medium text-[#17384a] transition hover:bg-[#e2c474]"
+            >
+              Discuss Business & Barter Opportunities
+            </a>
           </div>
         </div>
       </section>
