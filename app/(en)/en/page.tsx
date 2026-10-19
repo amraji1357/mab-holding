@@ -297,6 +297,15 @@ export default function EnglishHome() {
                 through qualified professionals and within the applicable legal framework.
               </p>
             </article>
+
+            <article className="rounded-3xl border border-[#a94f4f]/20 bg-[#a94f4f]/10 p-7 transition hover:border-[#d4af5a]/70">
+              <p className="text-sm tracking-widest text-[#d4af5a]">08 / SIM CARDS</p>
+              <h3 className="mt-4 text-2xl font-bold">Permanent 0912 SIM Cards</h3>
+              <p className="mt-4 leading-8 text-[#a94f4f]/90">
+                Buying and selling Hamrah Aval permanent 0912 SIM cards,
+                with cash and installment payment options, subject to sales terms.
+              </p>
+            </article>
           </div>
 
           <div className="mt-12 rounded-3xl border border-[#d4af5a]/50 bg-[#17384a] p-8 sm:p-12">

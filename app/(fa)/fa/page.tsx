@@ -297,6 +297,15 @@ export default function FarsiHome() {
                 متخصصان و مراجع دارای صلاحیت و در چارچوب قوانین مربوطه.
               </p>
             </article>
+
+            <article className="rounded-3xl border border-[#a94f4f]/20 bg-[#a94f4f]/10 p-7 transition hover:border-[#d4af5a]/70">
+              <p className="text-sm tracking-widest text-[#d4af5a]">08 / SIM CARDS</p>
+              <h3 className="mt-4 text-2xl font-bold">خرید و فروش سیم‌کارت دائمی ۰۹۱۲</h3>
+              <p className="mt-4 leading-8 text-[#a94f4f]/90">
+                خریدوفروش سیم‌کارت‌های دائمی همراه اول با پیش‌شمارهٔ ۰۹۱۲،
+                با امکان پرداخت نقدی و اقساطی، مطابق با شرایط فروش.
+              </p>
+            </article>
           </div>
 
           <div className="mt-12 rounded-3xl border border-[#d4af5a]/50 bg-[#17384a] p-8 sm:p-12">
