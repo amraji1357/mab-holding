@@ -1,10 +1,34 @@
+
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "پتروشیمی | M.A.B Holding",
   description:
-    "پتروشیمی، یکی از شرکت‌های زیرمجموعه هلدینگ M.A.B.",
+    "خرید و فروش کلیه محصولات پتروشیمی توسط هلدینگ M.A.B.",
 };
+
+const productSections = [
+  {
+    number: "01",
+    title: "محصولات شیمیایی",
+    products: ["متانول و اسید استیک", "متانول", "یوتیلینی"],
+  },
+  {
+    number: "02",
+    title: "پلیمر و محصولات نفتی",
+    products: [
+      "پلی‌اتیلن",
+      "خوراک الفین",
+      "پلیمر و آروماتیک",
+      "قیر",
+    ],
+  },
+  {
+    number: "03",
+    title: "محصولات کشاورزی",
+    products: ["اوره و آمونیاک", "کود شیمیایی"],
+  },
+];
 
 export default function PetrochemicalPage() {
   return (
@@ -64,7 +88,6 @@ export default function PetrochemicalPage() {
             <p className="text-xs tracking-[0.35em] text-[#d4af5a]">
               درباره شرکت
             </p>
-
             <div className="mt-8 h-px w-20 bg-[#d4af5a]" />
           </div>
 
@@ -77,10 +100,63 @@ export default function PetrochemicalPage() {
 
             <p className="mt-10 text-lg leading-9 text-[#a94f4f]/80">
               شرکت پتروشیمی یکی از مجموعه‌های زیرمجموعه هلدینگ
-              بی‌رامی است. اطلاعات کامل درباره فعالیت، محصولات،
-              خدمات، حوزه کاری و چشم‌انداز این شرکت در این بخش
-              قرار خواهد گرفت.
+              بی‌رامی است. این مجموعه در زمینه خرید و فروش
+              محصولات پتروشیمی فعالیت می‌کند.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Petrochemical Products */}
+      <section
+        id="products"
+        className="border-y border-[#a94f4f]/15 bg-[#6faac5]/35 py-24"
+      >
+        <div className="mx-auto max-w-7xl px-6">
+          <p className="text-xs tracking-[0.3em] text-[#d4af5a]">
+            M.A.B HOLDING / PRODUCTS
+          </p>
+
+          <h2 className="mt-6 text-3xl font-bold leading-relaxed text-[#a94f4f] md:text-5xl">
+            خرید و فروش کلیه محصولات پتروشیمی
+          </h2>
+
+          <p className="mt-5 max-w-2xl text-base leading-8 text-[#a94f4f]/80">
+            ارائه محصولات در سه گروه اصلی شیمیایی، پلیمری و
+            محصولات مرتبط با کودهای شیمیایی.
+          </p>
+
+          <div className="mt-14 grid gap-6 md:grid-cols-3">
+            {productSections.map((section) => (
+              <article
+                key={section.number}
+                className="group rounded-2xl border border-[#a94f4f]/20 bg-[#5f9fbd]/70 p-7 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-[#d4af5a]/70 hover:bg-[#79b4cf]/80"
+              >
+                <div className="flex items-center justify-between">
+                  <span className="text-3xl font-light text-[#d4af5a]">
+                    {section.number}
+                  </span>
+
+                  <span className="h-px w-12 bg-[#d4af5a]/70" />
+                </div>
+
+                <h3 className="mt-7 border-b border-[#a94f4f]/20 pb-5 text-xl font-bold leading-8 text-[#a94f4f]">
+                  {section.title}
+                </h3>
+
+                <ul className="mt-5 space-y-4">
+                  {section.products.map((product, index) => (
+                    <li
+                      key={`${section.number}-${index}`}
+                      className="flex items-start gap-3 text-base leading-7 text-[#a94f4f]/90"
+                    >
+                      <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-[#d4af5a]" />
+                      <span>{product}</span>
+                    </li>
+                  ))}
+                </ul>
+              </article>
+            ))}
           </div>
         </div>
       </section>
@@ -92,22 +168,17 @@ export default function PetrochemicalPage() {
             اطلاعات شرکت
           </p>
 
-          <div className="mt-12 grid gap-5 md:grid-cols-3">
-            <InfoCard
-              title="حوزه فعالیت"
-              text="پتروشیمی"
-            />
+          <div className="mt-12 grid gap-5 md:grid-cols-2">
+  <InfoCard
+    title="حوزه فعالیت"
+    text="خرید و فروش محصولات پتروشیمی"
+  />
 
-            <InfoCard
-              title="موقعیت"
-              text="سوئد"
-            />
-
-            <InfoCard
-              title="وب‌سایت"
-              text="به‌زودی اضافه می‌شود."
-            />
-          </div>
+  <InfoCard
+    title="وب‌سایت"
+    text="به‌زودی اضافه می‌شود."
+  />
+</div>
         </div>
       </section>
 
@@ -118,7 +189,7 @@ export default function PetrochemicalPage() {
             M.A.B
           </span>
 
-          <span className="text-sm text-[#a94f4f]/50">
+          <span className="text-sm text-[#a94f4f]/70">
             Petrochemical
           </span>
         </div>
@@ -146,3 +217,4 @@ function InfoCard({
     </article>
   );
 }
+

@@ -1,10 +1,41 @@
+
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Petrochemical | M.A.B Holding",
   description:
-    "Petrochemical, one of the companies within M.A.B Holding.",
+    "Buying and selling a wide range of petrochemical products through M.A.B Holding.",
 };
+
+const productSections = [
+  {
+    number: "01",
+    title: "Chemical Products",
+    products: [
+      "Methanol and Acetic Acid",
+      "Methanol",
+      "Yutilini",
+    ],
+  },
+  {
+    number: "02",
+    title: "Polymers and Petroleum Products",
+    products: [
+      "Polyethylene",
+      "Olefin Feedstock",
+      "Polymers and Aromatics",
+      "Bitumen",
+    ],
+  },
+  {
+    number: "03",
+    title: "Agricultural Products",
+    products: [
+      "Urea and Ammonia",
+      "Chemical Fertilizers",
+    ],
+  },
+];
 
 export default function PetrochemicalPage() {
   return (
@@ -73,10 +104,65 @@ export default function PetrochemicalPage() {
             </h2>
 
             <p className="mt-10 text-lg leading-9 text-[#a94f4f]/80">
-              Petrochemical is one of the companies within Birami Holding.
-              Detailed information about its activities, products, services,
-              business areas, and vision will be presented here.
+              Petrochemical is one of the companies within Birami
+              Holding. The company operates in the buying and
+              selling of petrochemical products.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Petrochemical Products */}
+      <section
+        id="products"
+        className="border-y border-[#a94f4f]/15 bg-[#6faac5]/35 py-24"
+      >
+        <div className="mx-auto max-w-7xl px-6">
+          <p className="text-xs tracking-[0.3em] text-[#d4af5a]">
+            M.A.B HOLDING / PRODUCTS
+          </p>
+
+          <h2 className="mt-6 text-3xl font-bold leading-relaxed text-[#a94f4f] md:text-5xl">
+            Buying and Selling All Petrochemical Products
+          </h2>
+
+          <p className="mt-5 max-w-2xl text-base leading-8 text-[#a94f4f]/80">
+            Our product portfolio covers chemical products,
+            polymers and petroleum products, as well as
+            fertilizers and agricultural chemicals.
+          </p>
+
+          <div className="mt-14 grid gap-6 md:grid-cols-3">
+            {productSections.map((section) => (
+              <article
+                key={section.number}
+                className="group rounded-2xl border border-[#a94f4f]/20 bg-[#5f9fbd]/70 p-7 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-[#d4af5a]/70 hover:bg-[#79b4cf]/80"
+              >
+                <div className="flex items-center justify-between">
+                  <span className="text-3xl font-light text-[#d4af5a]">
+                    {section.number}
+                  </span>
+
+                  <span className="h-px w-12 bg-[#d4af5a]/70" />
+                </div>
+
+                <h3 className="mt-7 border-b border-[#a94f4f]/20 pb-5 text-xl font-bold leading-8 text-[#a94f4f]">
+                  {section.title}
+                </h3>
+
+                <ul className="mt-5 space-y-4">
+                  {section.products.map((product, index) => (
+                    <li
+                      key={`${section.number}-${index}`}
+                      className="flex items-start gap-3 text-base leading-7 text-[#a94f4f]/90"
+                    >
+                      <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-[#d4af5a]" />
+                      <span>{product}</span>
+                    </li>
+                  ))}
+                </ul>
+              </article>
+            ))}
           </div>
         </div>
       </section>
@@ -88,15 +174,10 @@ export default function PetrochemicalPage() {
             COMPANY INFORMATION
           </p>
 
-          <div className="mt-12 grid gap-5 md:grid-cols-3">
+          <div className="mt-12 grid gap-5 md:grid-cols-2">
             <InfoCard
               title="BUSINESS AREA"
-              text="Petrochemical"
-            />
-
-            <InfoCard
-              title="LOCATION"
-              text="Sweden"
+              text="Buying and selling petrochemical products"
             />
 
             <InfoCard
@@ -114,7 +195,7 @@ export default function PetrochemicalPage() {
             M.A.B
           </span>
 
-          <span className="text-sm text-[#a94f4f]/50">
+          <span className="text-sm text-[#a94f4f]/70">
             Petrochemical
           </span>
         </div>
@@ -142,3 +223,4 @@ function InfoCard({
     </article>
   );
 }
+
