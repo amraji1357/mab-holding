@@ -340,69 +340,45 @@ export default function FarsiHome() {
               <p className="mb-4 text-sm tracking-[0.3em] text-[#d4af5a]">
                 CONTACT
               </p>
-
               <h2 className="text-4xl font-bold text-[#a94f4f] sm:text-5xl">
                 با ما در ارتباط باشید.
               </h2>
             </div>
 
             <div className="flex flex-col items-start gap-5">
-              <a
-                href="mailto:info@mab-holding.com"
-                className="w-fit border-b border-[#d4af5a] pb-2 text-[#d4af5a] transition hover:text-[#e2c474]"
-              >
-                info@mab-holding.com
+              <a href="mailto:mohamadamraji@yahoo.com"
+                className="w-fit border-b border-[#d4af5a] pb-2 text-[#d4af5a] transition hover:text-[#e2c474]">
+                mohamadamraji@yahoo.com
               </a>
 
+              <div className="flex flex-col gap-3 text-[#d4af5a]">
+                <a href="tel:09121031082" className="transition hover:text-[#e2c474]">
+                  موبایل مستقیم: 09121031082
+                </a>
+                <a href="tel:0900677177" className="transition hover:text-[#e2c474]">
+                  شماره کاری: 0900677177
+                </a>
+                <a href="tel:09006772677" className="transition hover:text-[#e2c474]">
+                  شماره کاری: 09006772677
+                </a>
+              </div>
+
+              <div className="max-w-xl text-[#d4af5a]">
+                <p className="mb-2 font-bold">آدرس دفتر</p>
+                <p>تهران، خیابان پیروزی، جنب مترو ابن‌سینا، ساختمان آرامیس، واحد ۴۰۴</p>
+                <a href="https://www.google.com/maps/search/?api=1&query=تهران%20خیابان%20پیروزی%20ساختمان%20آرامیس%20واحد%20404"
+                  target="_blank" rel="noopener noreferrer"
+                  className="mt-2 inline-block underline transition hover:text-[#e2c474]">
+                  مشاهده روی نقشه گوگل
+                </a>
+              </div>
+
               <div className="flex flex-wrap gap-3">
-                <a
-                  href="https://www.instagram.com/m.a.b_holding/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="border border-[#d4af5a]/40 px-4 py-2 text-sm text-[#d4af5a] transition hover:border-[#d4af5a] hover:text-[#e2c474]"
-                >
-                  اینستاگرام
-                </a>
-                <a
-                  href="https://wa.me/989306831826"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="border border-[#d4af5a]/40 px-4 py-2 text-sm text-[#d4af5a] transition hover:border-[#d4af5a] hover:text-[#e2c474]"
-                >
-                  واتساپ
-                </a>
-                <a
-                  href="https://t.me/mab_holding"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="border border-[#d4af5a]/40 px-4 py-2 text-sm text-[#d4af5a] transition hover:border-[#d4af5a] hover:text-[#e2c474]"
-                >
-                  تلگرام
-                </a>
-                <a
-                  href="https://ble.ir/mab_holding"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="border border-[#d4af5a]/40 px-4 py-2 text-sm text-[#d4af5a] transition hover:border-[#d4af5a] hover:text-[#e2c474]"
-                >
-                  بله
-                </a>
-                <a
-                  href="https://rubika.ir/mab_holding"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="border border-[#d4af5a]/40 px-4 py-2 text-sm text-[#d4af5a] transition hover:border-[#d4af5a] hover:text-[#e2c474]"
-                >
-                  روبیکا
-                </a>
-                <a
-                  href="https://igap.net/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="border border-[#d4af5a]/40 px-4 py-2 text-sm text-[#d4af5a] transition hover:border-[#d4af5a] hover:text-[#e2c474]"
-                >
-                  آی‌گپ
-                </a>
+                <a href="https://www.instagram.com/m.a.b_holding/" target="_blank" rel="noopener noreferrer" className="border border-[#d4af5a]/40 px-4 py-2 text-sm text-[#d4af5a] transition hover:border-[#d4af5a] hover:text-[#e2c474]">اینستاگرام</a>
+                <a href="https://t.me/mab_holding" target="_blank" rel="noopener noreferrer" className="border border-[#d4af5a]/40 px-4 py-2 text-sm text-[#d4af5a] transition hover:border-[#d4af5a] hover:text-[#e2c474]">تلگرام</a>
+                <a href="https://ble.ir/mab_holding" target="_blank" rel="noopener noreferrer" className="border border-[#d4af5a]/40 px-4 py-2 text-sm text-[#d4af5a] transition hover:border-[#d4af5a] hover:text-[#e2c474]">بله</a>
+                <a href="https://rubika.ir/mab_holding" target="_blank" rel="noopener noreferrer" className="border border-[#d4af5a]/40 px-4 py-2 text-sm text-[#d4af5a] transition hover:border-[#d4af5a] hover:text-[#e2c474]">روبیکا</a>
+                <a href="https://igap.net/" target="_blank" rel="noopener noreferrer" className="border border-[#d4af5a]/40 px-4 py-2 text-sm text-[#d4af5a] transition hover:border-[#d4af5a] hover:text-[#e2c474]">آی‌گپ</a>
               </div>
             </div>
           </div>
